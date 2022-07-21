@@ -13,7 +13,6 @@ app.use(
 		origin: [process.env.CORS_OPTIONS] || "*",
 		credentials: true,
 		allowedHeaders: "*",
-		"Access-Control-Allow-Origin": "*",
 	})
 );
 
