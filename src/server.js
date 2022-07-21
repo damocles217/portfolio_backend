@@ -10,7 +10,10 @@ app.set("PORT", process.env.PORT || 8000);
 app.use(express.json());
 app.use(
 	cors({
-		origin: process.env.CORS_OPTIONS || "*",
+		origin: [process.env.CORS_OPTIONS] || "*",
+		credentials: true,
+		allowedHeaders: "*",
+		"Access-Control-Allow-Origin": "*",
 	})
 );
 
