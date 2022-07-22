@@ -19,6 +19,7 @@ app.use(
 			"Access-Control-Allow-Headers",
 			"Access-Control-Request-Headers",
 			"Access-Control-Request-Headers",
+			"Access-Control-Allow-Credentials",
 		],
 		preflightContinue: true,
 	})
