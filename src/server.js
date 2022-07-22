@@ -12,8 +12,7 @@ app.use(
 	cors({
 		origin: [process.env.CORS_OPTIONS] || "*",
 		credentials: true,
-		allowedHeaders: "*",
-		preflightContinue: true,
+		allowedHeaders: ["content-type"],
 	})
 );
 
