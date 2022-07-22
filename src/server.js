@@ -20,6 +20,7 @@ app.use(
 			"Access-Control-Request-Headers",
 			"Access-Control-Request-Headers",
 			"Access-Control-Allow-Credentials",
+			"content-type",
 		],
 		preflightContinue: true,
 	})
