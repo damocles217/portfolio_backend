@@ -15,7 +15,11 @@ app.use(
 	cors({
 		origin: [process.env.CORS_OPTIONS] || "*",
 		credentials: true,
-		allowedHeaders: "*",
+		allowedHeaders: [
+			"Access-Control-Allow-Headers",
+			"Access-Control-Request-Headers",
+			"Access-Control-Request-Headers",
+		],
 		preflightContinue: true,
 	})
 );
