@@ -7,6 +7,9 @@ const app = express();
 
 app.set("PORT", process.env.PORT || 8000);
 
+app.use((req, _, next) => {
+	if (req.method == "OPTIONS") next();
+});
 app.use(express.json());
 app.use(
 	cors({
